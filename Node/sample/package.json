@@ -1,13 +1,19 @@
 {
-    "name": "sample",
-    "version": "0.6.0",
-    "description": "Sample for the botbuilder-location control",
-    "author": "Microsoft Corp.",
-    "license": "MIT",
-    "dependencies": {
-        "botbuilder": "^3.5.3",
-        "botbuilder-location": "^1.0.2",
-        "dotenv-extended": "^1.0.4",
-        "restify": "^4.2.0"
-    }
+  "name": "sample",
+  "version": "0.6.0",
+  "description": "Sample for the botbuilder-location control",
+  "author": "Microsoft Corp.",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "^3.5.3",
+    "botbuilder-location": "^1.0.2",
+    "dotenv-extended": "^1.0.4",
+    "restify": "^4.2.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
