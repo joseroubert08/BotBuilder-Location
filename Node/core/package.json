@@ -21,12 +21,18 @@
   "dependencies": {
     "botbuilder": "^3.5.3",
     "request-promise": "^4.1.1",
-    "sprintf-js": "^1.0.3"
+    "sprintf-js": "^1.0.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/es6-shim": "^0.31.32",
     "@types/request": "0.0.33",
     "@types/request-promise": "^4.1.33",
     "@types/sprintf-js": "0.0.27"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
